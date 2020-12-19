@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tic Tac Toe</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body onload="show()">
+    <div class="title">
+      <h2 id="title">tic tac toe</h2>
+    </div>
+    <div class="info">
+      <span>You: <span id="huPlayer"></span></span>
+      <span>Ai: <span id="aiPlayer"></span></span>
+    </div>
+    <div class="info">
+      <span>Wins: <span id="wins">0</span></span>
+      <span>Losses: <span id="losses">0</span></span>
+      <span>Ties: <span id="ties">0</span></span>
+    </div>
+    <!-- <div class="players">
+      <div class="info">
+<span>You: <span id="huPlayer"></span></span>
+        <div>Asad: <span id="aiPlayer"></span></div>
+        <div class="score">
+          <span id="scoreTitle">Score</span>
+          <div>Wins: <span id="wins">0</span></div>
+          <div>Losses: <span id="losses">0</span></div>
+          <div>Ties: <span id="ties">0</span></div>
+        </div>
+      </div>
+    </div> -->
+    <table>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
+    </table>
+    <div class="endgame">
+      <div class="text">Test</div>
+    </div>
+    <div class="playAgain">
+      <button id="playAgain" onClick="startGame()">play again</button>
+      <button id="playAgain" onClick="switchMarker()">switch marker</button>
+      <button id="playAgain" onClick="resetScore()">reset score</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
